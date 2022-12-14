@@ -1,0 +1,15 @@
+.todo{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+button{
+  background-color:aquamarine;
+}
+/* .todo .content{
+
+} */
+.todo.done{
+  text-decoration:  line-through;
+}

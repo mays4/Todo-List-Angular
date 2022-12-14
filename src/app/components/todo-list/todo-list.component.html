@@ -1,0 +1,14 @@
+<div class="app">
+  <form (submit)="addTask()">
+    <input type="text" placeholder="enter task" name="input" [(ngModel)]="input">
+      <button type="submit">submit</button>
+  </form>
+  <div><h1>To do List</h1></div>
+  <div class="todo" *ngFor="let task of taskList; let i = index" class="todo {{(task.completed ? 'done' : '')}}">
+    <div (click)="toggleDone(i)">{{task.content}}</div>
+    <div><button (click)="deleteTask(i)">remove</button></div>
+
+
+
+  </div>
+</div>
